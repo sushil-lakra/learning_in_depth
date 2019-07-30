@@ -29,5 +29,8 @@
     <ClInclude Include="edit_distance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="coin_change.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
