@@ -32,5 +32,8 @@
     <ClInclude Include="coin_change.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="matrix_chain_multiplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

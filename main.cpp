@@ -1,27 +1,25 @@
 
 #include <iostream>
 #include <algorithm>
-#include "edit_distance.h"
-
+#include "matrix_chain_multiplication.h"
 
 int main()
 {
-    char l[] = "ACDCX";
-    char r[] = "BADCF";
-    int m = strlen(l);
-    int n = strlen(r);
+    int arr[] = {3, 2, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    int** aux = new int*[m + 1];
-    for (int i = 0; i < m + 1; ++i)
-        aux[i] = new int[n + 1];
+    int** aux = new int*[n];
+    for (int i = 0; i < n; ++i)
+        aux[i] = new int[n];
 
-    for (int i = 0; i < m + 1; ++i)
-        for (int j = 0; j < n + 1; ++j)
+    for (int i = 0; i < n; ++i)
+        for (int j = 0; j < n; ++j)
             aux[i][j] = 0;
 
-    std::cout << ed_itr(l, r, m, n, aux) << std::endl;
+    std::cout << mcm(arr, n - 1, aux) << std::endl;
 
     int stop;
     std::cin >> stop;
 }
+
 
