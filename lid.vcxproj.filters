@@ -35,5 +35,8 @@
     <ClInclude Include="matrix_chain_multiplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="knapsack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

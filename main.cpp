@@ -1,25 +1,27 @@
 
 #include <iostream>
 #include <algorithm>
-#include "matrix_chain_multiplication.h"
+#include "knapsack.h"
 
 int main()
 {
-    int arr[] = {3, 2, 4, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int v[] = {60, 100, 120, 200};
+    int w[] = {1, 2, 3, 4};
 
-    int** aux = new int*[n];
-    for (int i = 0; i < n; ++i)
-        aux[i] = new int[n];
+    int m = sizeof(v) / sizeof(v[0]);
+    int n = 5;
 
-    for (int i = 0; i < n; ++i)
-        for (int j = 0; j < n; ++j)
+    int** aux = new int*[m + 1];
+    for (int i = 0; i < m + 1; ++i)
+        aux[i] = new int[n + 1];
+
+    for (int i = 0; i < m + 1; ++i)
+        for (int j = 0; j < n + 1; ++j)
             aux[i][j] = 0;
 
-    std::cout << mcm(arr, n - 1, aux) << std::endl;
+    std::cout << knapsack(v, w, m, n, aux) << std::endl;
 
     int stop;
     std::cin >> stop;
 }
-
 
