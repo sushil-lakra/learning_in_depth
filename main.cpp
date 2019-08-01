@@ -1,25 +1,22 @@
 
 #include <iostream>
 #include <algorithm>
-#include "knapsack.h"
+#include "egg_dropping_problem.h"
 
 int main()
 {
-    int v[] = {60, 100, 120, 200};
-    int w[] = {1, 2, 3, 4};
+    int f = 36;
+    int e = 2;
 
-    int m = sizeof(v) / sizeof(v[0]);
-    int n = 5;
+    int** aux = new int*[f + 1];
+    for (int i = 0; i < f + 1; ++i)
+        aux[i] = new int[e + 1];
 
-    int** aux = new int*[m + 1];
-    for (int i = 0; i < m + 1; ++i)
-        aux[i] = new int[n + 1];
-
-    for (int i = 0; i < m + 1; ++i)
-        for (int j = 0; j < n + 1; ++j)
+    for (int i = 0; i < f + 1; ++i)
+        for (int j = 0; j < e + 1; ++j)
             aux[i][j] = 0;
 
-    std::cout << knapsack(v, w, m, n, aux) << std::endl;
+    std::cout << ed_itr(f, e, aux) << std::endl;
 
     int stop;
     std::cin >> stop;

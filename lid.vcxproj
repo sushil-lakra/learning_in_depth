@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClInclude Include="coin_change.h" />
     <ClInclude Include="edit_distance.h" />
+    <ClInclude Include="egg_dropping_problem.h" />
     <ClInclude Include="knapsack.h" />
     <ClInclude Include="longest_common_subsequence.h" />
     <ClInclude Include="longest_increasing_subsequence.h" />
