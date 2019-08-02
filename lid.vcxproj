@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -132,7 +132,9 @@
     <ClInclude Include="knapsack.h" />
     <ClInclude Include="longest_common_subsequence.h" />
     <ClInclude Include="longest_increasing_subsequence.h" />
+    <ClInclude Include="longest_palindromic_subsequence.h" />
     <ClInclude Include="matrix_chain_multiplication.h" />
+    <ClInclude Include="rod_cutting_problem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

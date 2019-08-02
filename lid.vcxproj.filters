@@ -41,5 +41,8 @@
     <ClInclude Include="egg_dropping_problem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="longest_palindromic_subsequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
