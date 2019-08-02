@@ -134,7 +134,7 @@
     <ClInclude Include="longest_increasing_subsequence.h" />
     <ClInclude Include="longest_palindromic_subsequence.h" />
     <ClInclude Include="matrix_chain_multiplication.h" />
-    <ClInclude Include="rod_cutting_problem.h" />
+    <ClInclude Include="rod_cutting.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

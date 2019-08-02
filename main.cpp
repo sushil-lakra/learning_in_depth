@@ -1,14 +1,14 @@
 
 #include <iostream>
 #include <algorithm>
-#include "longest_palindromic_subsequence.h"
+#include "rod_cutting.h"
 
 int main()
 {
-    int v[] = {60, 100, 120, 200};
-    int w[] = {1, 2, 3, 4};
+    int p[] = {60, 100, 120, 200};
+    int l[] = {1, 2, 3, 4};
 
-    int m = sizeof(v) / sizeof(v[0]);
+    int m = sizeof(p) / sizeof(p[0]);
     int n = 5;
 
     int** aux = new int*[m + 1];
@@ -19,7 +19,7 @@ int main()
         for (int j = 0; j < n + 1; ++j)
             aux[i][j] = 0;
 
-    std::cout << knapsack(v, w, m, n, aux) << std::endl;
+    std::cout << rcp_itr(p, l, m, n, aux) << std::endl;
 
     int stop;
     std::cin >> stop;

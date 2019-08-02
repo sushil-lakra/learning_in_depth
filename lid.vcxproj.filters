@@ -44,5 +44,8 @@
     <ClInclude Include="longest_palindromic_subsequence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="rod_cutting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
